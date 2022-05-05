@@ -10,7 +10,7 @@ require_once "vendor/autoload.php";
 $isDevMode = true;
 $proxiDir = null;
 $cache = null;
-$useSimpleAnnotationReader = false;
+
 $config = ORMSetup::createAnnotationMetadataConfiguration(
     array(__DIR__ . "/src"),
     $isDevMode,
@@ -19,7 +19,7 @@ $config = ORMSetup::createAnnotationMetadataConfiguration(
 );
 
 $connectionParams = array(
-    'dbname' => 'PersonalDB_D',
+    'dbname' => 'doctrine_demo',
     'user' => 'root',
     'password' => 'password',
     'host' => 'localhost',
